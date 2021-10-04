@@ -1,0 +1,156 @@
+ * {
+ 	padding: 0;
+ 	margin: 0;
+ 	box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 60px;
+}
+header > .container {
+    background-color: #f7e296;
+}
+.header-top {
+    position: relative;
+}
+.logo {
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+.header-top__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    font-size: 15px;
+    font-family: opensanslight;   
+}
+a.search {
+    opacity: .3;
+}
+a.search:hover {
+    opacity: .6;
+}
+a.search:active {
+    opacity: 1;
+}
+a.enter {
+    opacity: .3;
+}
+a.enter:hover {
+    opacity: .6;
+}
+a.enter:active {
+    opacity: 1;
+}
+.header-top__list > li {
+    flex-grow: 1;
+}
+.header-top__list > li:nth-child(1) {
+    flex-grow: 6;
+    padding-left: 40px;
+}
+.header-top__list > li:nth-child(2) {
+    flex-grow: 4;
+}
+.header-top__list > li:nth-child(3),
+    .header-top__list > li:nth-child(4) {
+    text-align: right;
+}
+.header-top__list a {
+    position: relative;
+    color: #000;
+}
+.search::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    background: url(../img/search.png) center no-repeat;
+    background-size: cover;
+}
+.enter::before {
+    content: "";
+    display: block;
+    width: 13px;
+    height: 12px;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    background: url(../img/enter.png) center no-repeat;
+    background-size: cover;
+}
+.compare::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    background: url(../img/compare.png) center no-repeat;
+    background-size: cover;
+}
+.basket::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    background: url(../img/basket.png) center no-repeat;
+    background-size: cover;
+}
+.nav {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    font-family: gilroyextrabold;
+    letter-spacing: 4px;
+}
+.nav a {
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+}
+.nav > li:nth-child(1) {
+    flex-grow: 4;
+}
+.nav > li:nth-child(2) {
+    flex-grow: 1;
+    text-align: left;
+}
+.nav > li:nth-child(3) {
+    flex-grow: 1;
+}
+.nav > li:nth-child(4) {
+    flex-grow: 1;
+    text-align: right;
+}
+.catalog {
+    position: relative;
+}
+.catalog::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 1px;
+    right: -30px;
+    background: url(../img/plus.png) center no-repeat;
+    background-size: cover;
+}
