@@ -20,7 +20,7 @@ header > .container {
 .header-top {
     position: relative;
 }
-.logo {
+.header-top__logo {
     display: block;
     position: absolute;
     top: -20px;
@@ -51,25 +51,23 @@ a.enter:hover {
 a.enter:active {
     opacity: 1;
 }
-.header-top__list > li {
-    flex-grow: 1;
-}
-.header-top__list > li:nth-child(1) {
+.header-top__list_item:nth-child(1) {
     flex-grow: 6;
     padding-left: 40px;
 }
-.header-top__list > li:nth-child(2) {
+.header-top__list_item:nth-child(2) {
     flex-grow: 4;
 }
-.header-top__list > li:nth-child(3),
-    .header-top__list > li:nth-child(4) {
+.header-top__list_item:nth-child(3),
+    .header-top__list_item:nth-child(4) {
+    flex-grow: 1;
     text-align: right;
 }
 .header-top__list a {
     position: relative;
     color: #000;
 }
-.search::before {
+.header-top__list_search::before {
     content: "";
     display: block;
     width: 16px;
@@ -80,7 +78,7 @@ a.enter:active {
     background: url(../img/search.png) center no-repeat;
     background-size: cover;
 }
-.enter::before {
+.header-top__list_enter::before {
     content: "";
     display: block;
     width: 13px;
@@ -91,7 +89,7 @@ a.enter:active {
     background: url(../img/enter.png) center no-repeat;
     background-size: cover;
 }
-.compare::before {
+.header-top__list_compare::before {
     content: "";
     display: block;
     width: 10px;
@@ -102,7 +100,7 @@ a.enter:active {
     background: url(../img/compare.png) center no-repeat;
     background-size: cover;
 }
-.basket::before {
+.header-top__list_basket::before {
     content: "";
     display: block;
     width: 12px;
@@ -126,24 +124,24 @@ a.enter:active {
     color: #000;
     text-transform: uppercase;
 }
-.nav > li:nth-child(1) {
+.nav__list_item:nth-child(1) {
     flex-grow: 4;
 }
-.nav > li:nth-child(2) {
+.nav__list_item:nth-child(2) {
     flex-grow: 1;
     text-align: left;
 }
-.nav > li:nth-child(3) {
+.nav__list_item:nth-child(3) {
     flex-grow: 1;
 }
-.nav > li:nth-child(4) {
+.nav__list_item:nth-child(4) {
     flex-grow: 1;
     text-align: right;
 }
-.catalog {
+.nav__item_catalog {
     position: relative;
 }
-.catalog::after {
+.nav__item_catalog::after {
     content: "";
     display: block;
     width: 16px;
