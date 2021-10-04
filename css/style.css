@@ -12,9 +12,10 @@ a {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 60px;
+    padding: 40px 20px;
 }
 header > .container {
+    padding: 40px 60px;
     background-color: #f7e296;
 }
 .header-top {
@@ -33,41 +34,41 @@ header > .container {
     font-size: 15px;
     font-family: opensanslight;   
 }
-a.search {
+.header-top__list-search {
     opacity: .3;
 }
-a.search:hover {
+.header-top__list-search:hover {
     opacity: .6;
 }
-a.search:active {
+.header-top__list-search:active {
     opacity: 1;
 }
-a.enter {
+.header-top__list-enter {
     opacity: .3;
 }
-a.enter:hover {
+.header-top__list-enter:hover {
     opacity: .6;
 }
-a.enter:active {
+.header-top__list-enter:active {
     opacity: 1;
 }
-.header-top__list_item:nth-child(1) {
+.header-top__list-item:nth-child(1) {
     flex-grow: 6;
     padding-left: 40px;
 }
-.header-top__list_item:nth-child(2) {
+.header-top__list-item:nth-child(2) {
     flex-grow: 4;
 }
-.header-top__list_item:nth-child(3),
-    .header-top__list_item:nth-child(4) {
+.header-top__list-item:nth-child(3),
+    .header-top__list-item:nth-child(4) {
     flex-grow: 1;
     text-align: right;
 }
-.header-top__list a {
+.header-top__list-link {
     position: relative;
     color: #000;
 }
-.header-top__list_search::before {
+.header-top__list-search::before {
     content: "";
     display: block;
     width: 16px;
@@ -78,7 +79,7 @@ a.enter:active {
     background: url(../img/search.png) center no-repeat;
     background-size: cover;
 }
-.header-top__list_enter::before {
+.header-top__list-enter::before {
     content: "";
     display: block;
     width: 13px;
@@ -89,7 +90,7 @@ a.enter:active {
     background: url(../img/enter.png) center no-repeat;
     background-size: cover;
 }
-.header-top__list_compare::before {
+.header-top__list-compare::before {
     content: "";
     display: block;
     width: 10px;
@@ -100,7 +101,7 @@ a.enter:active {
     background: url(../img/compare.png) center no-repeat;
     background-size: cover;
 }
-.header-top__list_basket::before {
+.header-top__list-basket::before {
     content: "";
     display: block;
     width: 12px;
@@ -124,24 +125,24 @@ a.enter:active {
     color: #000;
     text-transform: uppercase;
 }
-.nav__list_item:nth-child(1) {
+.nav__list-item:nth-child(1) {
     flex-grow: 4;
 }
-.nav__list_item:nth-child(2) {
+.nav__list-item:nth-child(2) {
     flex-grow: 1;
     text-align: left;
 }
-.nav__list_item:nth-child(3) {
+.nav__list-item:nth-child(3) {
     flex-grow: 1;
 }
-.nav__list_item:nth-child(4) {
+.nav__list-item:nth-child(4) {
     flex-grow: 1;
     text-align: right;
 }
-.nav__item_catalog {
+.nav__item-link-catalog {
     position: relative;
 }
-.nav__item_catalog::after {
+.nav__item-link-catalog::after {
     content: "";
     display: block;
     width: 16px;
@@ -151,4 +152,54 @@ a.enter:active {
     right: -30px;
     background: url(../img/plus.png) center no-repeat;
     background-size: cover;
+}
+/*------------------------------------------slider----------------------------------------------*/
+/*------------------------------------------slider----------------------------------------------*/
+.main__products-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.main__products-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    text-align: left;
+    
+    
+}
+.main__products-list-item-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    background-color: #f7e296;
+}
+.main__products-list-item-description {
+    margin-top: 35px;
+    font-size: 18px;
+    font-family: gilroyextrabold;
+    color: #000;
+}
+.delivery-section {
+    background-color: #e5e5e5;
+}
+.delivery-section > .container {
+    display: flex;
+}
+.delivery-list__item {
+    padding: 25px;
+}
+.delivery-list__item-link {
+    padding: 0 25px;
+    font-size: 18px;
+    font-family: gilroyextrabold;
+    color: #000;
+    background: url(../img/bg-element.png) center center no-repeat;
+    background-size: 196% 40%;
 }
