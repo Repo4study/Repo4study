@@ -6,6 +6,8 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+	integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 <body>
 	<header class="header">
@@ -37,10 +39,11 @@
 		<div class="container">
 			<ul class="main__products-list">
 				<li class="main__products-list-item">
-						<a href="" class="main__products-list-item-link">
-							<img src="img/popular-1.png" alt="" width="97px" height="55px">
+					<a href="" class="main__products-list-item-link">
+						<img src="img/popular-1.png" alt="" width="97px" height="55px">
 						</a>
 					<a href="" class="main__products-list-item-description">Виртуальная реальность</a>
+						
 				</li>
 				<li class="main__products-list-item">
 						<a href="" class="main__products-list-item-link">
@@ -78,15 +81,15 @@
 	<section class="delivery-section">
 		<div class="container">
 			<div class="delivery-section__block delivery-list">
-				<ul>
-					<li class="delivery-list__item"><a href="" class="delivery-list__item-link">Доставка</a></li>
+				<ul class="">
+					<li class="active delivery-list__item "><a href="" class="delivery-list__item-link ">Доставка</a></li>
 					<li class="delivery-list__item"><a href="" class="delivery-list__item-link">Гарантия</a></li>
 					<li class="delivery-list__item"><a href="" class="delivery-list__item-link">Кредит</a></li>
 				</ul>
 			</div>
 			<div class="delivery-section__block delivery-description">
-				<h2>Доставка</h2>
-				<p>
+				<h2 class="delivery-description__title">Доставка</h2>
+				<p class="delivery-description__text">
 					Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
 				</p>
 			</div>
@@ -95,5 +98,86 @@
 			</div>
 		</div>
 	</section>
+	<section class="partners-section">
+		<div class="container">
+			<div class="partners-section__block">
+				<a href=""><img src="img/company-1.png" alt=""></a>
+			</div>
+			<div class="partners-section__block">
+				<a href=""><img src="img/company-2.png" alt=""></a>
+			</div>
+			<div class="partners-section__block">
+				<a href=""><img src="img/company-3.png" alt=""></a>
+			</div>
+			<div class="partners-section__block">
+				<a href=""><img src="img/company-4.png" alt=""></a>
+			</div>
+		</div>
+	</section>
+	<section class="info-section">
+		<div class="container">
+			<div class="about-us">
+				<h2 class="info-section-title">О нас</h2>
+				<p class="info-section-text">Огромный выбор гаджетов не оставит равнодушным гика, <br> который есть в каждом из нас.</p>
+				<p class="info-section-text">Мы можем доставить ваш товар в самые отдаленные точки <br> России! DEVICE работает со многими транспортными компаниями</p>
+				<ul class="about-us__list">
+					<li class="about-us__list_item">Деловые Линии</li>
+					<li class="about-us__list_item">Автотрейдинг</li>
+					<li class="about-us__list_item">ЖелДорЭкспедиция</li>
+				</ul>
+				<a href="#" class="info-section-link">Подробнее о нас</a>
+			</div>
+			<div class="contacts-block">
+				<h2 class="info-section-title">
+					Контакты
+				</h2>
+				<p class="info-section-text">
+					Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br> проверить работоспособность покупки. Всякое бывает.
+				</p>
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.6518394474606!2d30.519826286895242!3d50.44758537947499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce56b2456d3b%3A0xd062ae171b57e947!2z0YPQuy4g0JrRgNC10YnQsNGC0LjQuiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1633510312439!5m2!1sru!2sua" width="560" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+				<a href="#" class="info-section-link">НАпишите нам</a>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="footer-top__logo">
+					<a href="#"><img src="img/footer-logo.png" alt=""></a>
+				</div>
+				<ul class="footer-top__list">
+					<li class="footer-top__list_item">
+						<a href="" class="footer-top__list_item-link list_item-link-enter">Войти</a></li>
+					<li class="footer-top__list_item list_item-compare">
+						<a href="" class="footer-top__list_item-link list_item-link-compare">Сравнить</a></li>
+					<li class="footer-top__list_item list_item-basket">
+						<a href="" class="footer-top__list_item-link list_item-link-basket">Корзина</a></li>
+				</ul>
+			</div>
+			<div class="footer-contacts__block">
+				<p class="footer-contact">г. Москва, ул. Строителей, 15</p>
+				<nav class="footer__nav">
+					<ul class="footer__menu">
+						<li class="footer__menu_item"><a href="" class="footer__menu_item-link">Доставка</a></li>
+						<li class="footer__menu_item"><a href="" class="footer__menu_item-link">Гарантия</a></li>
+						<li class="footer__menu_item"><a href="" class="footer__menu_item-link">Контакты</a></li>
+					</ul>
+				</nav>
+				<a href="" class="footer-contact">Тел.: +7 (495) 495-95-95</a>
+			</div>
+			<div class="footer-bottom">
+				<div class="footer-bottom-icons__block">
+					<a href="#" class="footer-bottom-link fb"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="footer-bottom-link insta"><i class="fab fa-instagram"></i></a>
+					<a href="#" class="footer-bottom-link twitter"><i class="fab fa-twitter"></i></a>
+				</div>
+					<div class="footer-html__block">
+						<a href="#" class="footer-bottom-link html-acad"><i class="logo-html"></i></a>
+					</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
