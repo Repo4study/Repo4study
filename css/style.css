@@ -421,6 +421,9 @@ header > .container {
     background-size: 100% 8px;
     cursor: pointer;
 }
+.delivery-slider__label:hover {
+    background-size: 100% 100%;
+}
 .label-delivery {
     position: absolute;
     top: 0;
@@ -519,15 +522,19 @@ header > .container {
 }
 .button-info {
     width: max-content;
-    padding: 0 25px;
+    padding: 5px 25px;
     text-transform: uppercase;
     color: #000;
     text-decoration: none;
     font-family: gilroyextrabold;
     font-size: 16px;
     background: url(../img/bg-element.png) center center no-repeat;
-    background-size: 196% 30%;
+    background-size: 100% 30%;
     letter-spacing: 3px;
+}
+.button-info:hover {
+    background-size: 100%  100%;
+    transition: .3s ease;
 }
 .footer {
     background-color: #464646;
@@ -692,3 +699,77 @@ a.footer-contact {
     opacity: .4;
     transition: .2s ease;
 }
+.popup {
+    display: none;
+    padding: 100px 100px 95px;
+    width: 960px;
+    position: absolute;
+    top: 1030px;
+    left: 230px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.popup:target {
+    display: block;
+}
+.popup__form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+.popup__name-form, .popup__email-form {
+    width: 360px;
+}                      
+.popup__letter-form {
+    margin-top: 40px;
+    width: 100%;
+}
+.popup__form_label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: gilroyextrabold;
+    line-height: 24px;
+}
+.popup__form_input {
+    padding: 18px 20px;
+    font-size: 14px;
+    font-family: opensansregular;
+    color: #464646;
+    border: none;
+    background-color: #f2f2f2;
+}
+.popup__letter-form > .popup__form_input:focus {
+    border: 2px solid #f7e296;
+}
+.popup__letter-form > .popup__form_input {
+    padding: 30px 20px 90px;
+}
+.popup-send__button {
+    margin-top: 55px;
+    border: none;
+    cursor: pointer;
+}
+.close {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background: url(../img/close.png) center no-repeat;
+    background-size: cover;
+    opacity: .5;
+}
+.close:hover {
+    opacity: 1;
+}
+.close:active {
+    opacity: .3;
+}
+

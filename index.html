@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Device index</title>
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
@@ -251,7 +251,27 @@
 				<div class="map">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.6518394474606!2d30.519826286895242!3d50.44758537947499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce56b2456d3b%3A0xd062ae171b57e947!2z0YPQuy4g0JrRgNC10YnQsNGC0LjQuiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1633510312439!5m2!1sru!2sua" width="560" height="220" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				</div>
-				<a href="#" class="button-info">НАпишите нам</a>
+				<a href="#popup" class="button-info">НАпишите нам</a>
+			</div>
+			<div class="popup" id="popup">
+				<form action="" class="popup__form">
+					<fieldset class="popup__name-form">
+						<label for="name" class="popup__form_label">Ваше имя:</label>
+						<input type="text" id="name" class="popup__form_input" placeholder="Имя Фамилия" required>
+				</fieldset>
+					<fieldset class="popup__email-form">
+						<label for="email" class="popup__form_label">Ваш e-mail:</label>
+						<input type="e-mail" id="email" class="popup__form_input" placeholder="email@example.com">
+				</fieldset>
+					<fieldset class="popup__letter-form">
+						<label for="letter" class="popup__form_label">Текст письма:</label>
+						<input type="text" id="letter" class="popup__form_input" placeholder="В свободной форме">
+				</fieldset>
+				<button class="popup-send__button button-info">
+					Отправить
+				</button>
+				</form>
+				<a href="#" class="close"></a>
 			</div>
 		</div>
 	</section>
