@@ -536,6 +536,9 @@ header > .container {
     background-size: 100%  100%;
     transition: .3s ease;
 }
+.button-info:active {
+    opacity: .6;
+}
 .footer {
     background-color: #464646;
 }

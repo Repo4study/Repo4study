@@ -52,17 +52,50 @@
 		</div>
 	</section>
 	<main class="main">
-
 			<aside class="main__aside">
 				<p class="filter">
 					Фильтр:
 				</p>
+				<form action="" class="aside__form">
 				<div class="range-slider">
-					<p class="slider-price">стоимость</p>
+					<p class="slider-price aside-text">стоимость</p>
 					<div class="range-slider-start"><span></span></div>
 					<div class="range"></div>
 					<div class="range-slider-end"><span></span></div>
+					<p class="calculate min">От 0</p><p class="calculate max">До 5000</p>
 				</div>
+				<p class="aside-text">Цвет</p>
+				<fieldset class="aside__form_fieldset first-fieldset">
+					<input type="checkbox" name="color" id="black-color" class="aside__form_input" checked>
+					<label for="black-color" class="aside__form_label">Черный</label>
+			</fieldset>
+				<fieldset class="aside__form_fieldset">
+					<input type="checkbox" name="color" id="white-color" class="aside__form_input">
+					<label for="white-color" class="aside__form_label">Белый</label>
+			</fieldset>
+				<fieldset class="aside__form_fieldset">
+					<input type="checkbox" name="color" id="blue-color" class="aside__form_input">
+					<label for="blue-color" class="aside__form_label">Синий</label>
+			</fieldset>
+				<fieldset class="aside__form_fieldset">
+					<input type="checkbox" name="color" id="red-color" class="aside__form_input">
+					<label for="red-color" class="aside__form_label">Красный</label>
+			</fieldset>
+				<fieldset class="aside__form_fieldset last-fieldset">
+					<input type="checkbox" name="color" id="pink-color" class="aside__form_input">
+					<label for="pink-color" class="aside__form_label">Розовый</label>
+			</fieldset>
+			<p class="aside-text">Bluetooth</p>
+			<fieldset class="aside__form_fieldset first-fieldset">
+				<input type="radio" name="radio" class="aside__form_radio-input" id="yes" checked>
+				<label for="yes" class="aside__form_radio-label">Есть</label>
+			</fieldset>
+			<fieldset class="aside__form_fieldset">
+				<input type="radio" name="radio" class="aside__form_radio-input" id="no">
+				<label for="no" class="aside__form_radio-label">Нет</label>
+			</fieldset>
+			<button class="button-info">Показать</button>
+			</form>
 			</aside>
 			<div class="main-wrapper">
 				<div class="main__products-top">
@@ -78,13 +111,22 @@
 				<div class="main__products">
 				<div class="main__products_element">
 					<img src="img/item-1.png" alt="">
+					<div class="in-basket-block">
+						<a href="#" class="button-info">В корзину</a>
+						<a href="#" class="add-to-compare">Добавить к сравнению</a>
+					</div>
 					<div class="description-wrapper">
-						<p class="main__products_element-description">Любительская селфи-палка</p>
+					<p class="main__products_element-description">Любительская селфи-палка</p>
 					<p class="main__products_element-price">500 руб.</p>
+					
 					</div>
 				</div>
 				<div class="main__products_element">
 					<img src="img/item-2.png" alt="">
+					<div class="in-basket-block">
+						<a href="#" class="button-info">В корзину</a>
+						<a href="#" class="add-to-compare">Добавить к сравнению</a>
+					</div>
 					<div class="description-wrapper">
 					<p class="main__products_element-description">Профессиональная селфи-палка </p>
 					<p class="main__products_element-price">1 500 руб.</p>
