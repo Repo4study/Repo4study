@@ -27,6 +27,12 @@ header > .container {
     top: -20px;
     left: 0;
 }
+.header-top__logo:hover {
+    opacity: .7;
+}
+.header-top__logo:active {
+    opacity: .4;
+}
 .header-top__list {
     display: flex;
     justify-content: space-around;
@@ -44,23 +50,40 @@ header > .container {
     opacity: 1;
 }
 .header-top__list-enter {
-
-    opacity: .3;
-}
-.header-top__list-log-off {
-    opacity: .3;
-}
-.header-top__list-log-off:hover {
-    opacity: .6;
-}
-.header-top__list-log-off:active {
     opacity: 1;
 }
 .header-top__list-enter:hover {
     opacity: .6;
 }
 .header-top__list-enter:active {
+    opacity: .3;
+}
+.header-top__list-compare {
     opacity: 1;
+}
+.header-top__list-compare:hover {
+    opacity: .6;
+}
+.header-top__list-compare:active {
+    opacity: .3;
+}
+.header-top__list-basket {
+    opacity: 1;
+}
+.header-top__list-basket:hover {
+    opacity: .6;
+}
+.header-top__list-basket:active {
+    opacity: .3;
+}
+.header-top__list-log-off {
+    opacity: 1;
+}
+.header-top__list-log-off:hover {
+    opacity: .6;
+}
+.header-top__list-log-off:active {
+    opacity: .3;
 }
 .header-top__list-item:nth-child(1) {
     flex-grow: 6;
@@ -135,11 +158,34 @@ header > .container {
     font-family: gilroyextrabold;
     letter-spacing: 4px;
 }
-.nav a {
+.nav__item-link-catalog:hover + .dropdown-menu {
+    display: flex;
+}
+.nav__item-link {
     font-size: 18px;
     color: #000;
     text-transform: uppercase;
 }
+.dropdown-menu {
+    display: none;
+    flex-wrap: wrap;
+    height: 44%;
+    flex-direction: column;
+
+}
+.dropdown-menu_item {
+    padding: 10px 28px 10px 0;
+}
+.dropdown-menu_item-link {
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-family: opensanslight;
+    color: #000;
+}
+.last-link {
+    padding: 9px 0 23px;
+}
+
 .nav__list-item:nth-child(1) {
     flex-grow: 4;
 }
@@ -187,6 +233,13 @@ header > .container {
     font-size: 14px;
     font-family: opensanslight;
     color: #464646;
+    opacity: .7;
+}
+.breadcrumb-list__item-link:hover {
+    opacity: 1;
+}
+.breadcrumb-list__item-link:active {
+    opacity: .3;
 }
 .breadcrumb::after {
     content: "";
@@ -433,7 +486,13 @@ header > .container {
     font-size: 14px;
     font-family: Open Sans Regular;
     color: #000;
-    opacity: .6;
+    opacity: .4;
+}
+.main__products-nav_item-link:hover {
+    opacity: .7;
+}
+.main__products-nav_item-link:active {
+    opacity: 1;
 }
 .type::after {
     content: "";
