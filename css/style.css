@@ -193,10 +193,16 @@ header > .container {
     text-transform: uppercase;
 }
 .dropdown-menu {
+    padding: 0px 42% 0 58px;
     display: none;
     flex-wrap: wrap;
-    height: 44%;
+    height: 31%;
     flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    background-color: #f7e296;
+    width: 1200px;
+    left: 160px;
 
 }
 .dropdown-menu:hover {
@@ -336,7 +342,7 @@ header > .container {
         line-height: 56px;
         text-align: left;
         letter-spacing: 4px;
-        z-index: 22;
+        z-index: 1;
     }
     .slider-title::after {
         content: "";
@@ -542,13 +548,13 @@ header > .container {
 .label-credit {
     position: absolute;
     top: 100px;
-    left: 195px;
+    left: 183px;
 }
 .delivery-slider__check:checked + .label-guarantee  {
     padding-right: 160px;
 }
 .delivery-slider__check:checked + .label-credit {
-    padding-right: 170px;
+    padding-right: 176px;
 }
 
 .partners-section {
