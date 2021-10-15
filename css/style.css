@@ -196,7 +196,7 @@ header > .container {
     padding: 0px 42% 0 58px;
     display: none;
     flex-wrap: wrap;
-    height: 31%;
+    height: 125px;
     flex-direction: column;
     position: absolute;
     z-index: 2;
